@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pojok Pesan Online</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Pojok Pesan</h1>
+  <p>Tinggalkan pesan, biarkan dunia membacanya.</p>
+
+  <textarea id="messageInput" placeholder="Tulis pesanmu..."></textarea>
+  <button id="sendBtn">Kirim Pesan</button>
+
+  <h2>Pesan Pengunjung:</h2>
+  <div id="messageList"></div>
+
+</div>
+
+<!-- Firebase CDN -->
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
