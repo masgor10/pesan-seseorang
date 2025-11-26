@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pojok Pesan Online</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesan yang Tak Tersampaikan</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="container">
+    <header>
+        <h1>Pesan Yang Tak Tersampaikan</h1>
+        <p>Tinggalkan pesan, biarkan dunia ikut merasakan kata-katamu.</p>
+    </header>
 
-  <h1>Pojok Pesan</h1>
-  <p>Tinggalkan pesan, biarkan dunia membacanya.</p>
+    <main>
+        <div class="form-box">
+            <input id="nama" type="text" placeholder="Nama kamu..." />
+            <textarea id="pesan" placeholder="Tulis pesanmu..."></textarea>
+            <button onclick="kirimPesan()">Kirim Pesan</button>
+        </div>
 
-  <textarea id="messageInput" placeholder="Tulis pesanmu..."></textarea>
-  <button id="sendBtn">Kirim Pesan</button>
+        <h2 class="judul-daftar">Pesan Pengunjung</h2>
 
-  <h2>Pesan Pengunjung:</h2>
-  <div id="messageList"></div>
+        <div id="daftar-pesan" class="daftar-pesan"></div>
+    </main>
 
-</div>
-
-<!-- Firebase CDN -->
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
 
 <script src="script.js"></script>
 </body>
 </html>
+
